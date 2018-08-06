@@ -1,3 +1,3 @@
 <?php
-include("views/enter-details-form.php");
+include("views/enter-details-view.php");
 ?>

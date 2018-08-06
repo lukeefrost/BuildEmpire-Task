@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href ="css.css"/>
+
 <?php
 include ("view-fncs.php");
 showHeader("Enter New Details");
