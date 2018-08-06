@@ -6,7 +6,7 @@ showHeader("Enter New Details");
 
 <html>
 <form action="enter-details.php" method="POST">
-	<h1>Add New Member</h1>
+	<h1>Enter User and Quote Details</h1>
 
 <br>
 
@@ -29,6 +29,8 @@ showHeader("Enter New Details");
 <input type="submit" name="submit" value="Submit" />
 </form>
 </html>
+
+
 <?php
 showFooter();
 ?>
