@@ -1,7 +1,7 @@
-
+<link type="text/css" rel="stylesheet" href ="css.css"/>
 <?php
-include ("view-fncs.php");
-showHeader("Enter New Details");
+include ("view_fncs.php");
+
 ?>
 
 <html>
@@ -29,7 +29,6 @@ showHeader("Enter New Details");
 <input type="submit" name="submit" value="Submit" />
 </form>
 </html>
-
 
 <?php
 showFooter();

@@ -1,7 +1,7 @@
 <link type="text/css" rel="stylesheet" href ="css.css"/>
 <?php
-include ("view-fncs.php");
-showHeader("There was a problem");
+include ("view_fncs.php");
+
 
 foreach($errorMsgs as $errorMsg)
 {
