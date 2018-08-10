@@ -1,5 +1,6 @@
 <?php
 
+//Insert customer details into the database
 function insertCustomer($conn,$name,$password,$eaddress,$phone,$total)
 {
 	$query="INSERT INTO Customers VALUES (NULL, :name, :password, :email, :phone, :total)";
