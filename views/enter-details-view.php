@@ -1,6 +1,7 @@
 <link type="text/css" rel="stylesheet" href ="css.css"/>
 <?php
 include ("view_fncs.php");
+
 ?>
 <html>
 <form action="enter-details.php" method="POST">
@@ -28,16 +29,19 @@ include ("view_fncs.php");
 <label for="title">Hours:</label>
 <input type="text" name="hours" id="hours">
 <label for="title">Price per Hour:</label>
-<input type="text" name="pricehour" id="pricehour">
+<input type="multiply" name="multiply" id="pricehour">
 <br>
 <br>
 <label for="title">Goods:</label>
 <label for="title">Quantity:</label>
 <input type="text" name="quantity" id="quantity">
 <label for="title">Price per Product:</label>
-<input type="text" name="price" id="price">
+<input type="multiply1" name="multiply1" id="price">
+<input type="submit" name="submit" value="Submit Totals" />
 <br>
 <br>
+<label for="title">Total Invoice:</label>
+<input type="totalinvoice" name="totalinvoice" id="totalinvoice">
 <input type="submit" name="submit" value="Submit" />
 </form>
 </html>
