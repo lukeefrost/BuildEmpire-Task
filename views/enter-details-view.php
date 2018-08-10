@@ -37,11 +37,11 @@ include ("view_fncs.php");
 <input type="text" name="quantity" id="quantity">
 <label for="title">Price per Product:</label>
 <input type="multiply1" name="multiply1" id="price">
-<input type="submit" name="submit" value="Submit Totals" />
 <br>
 <br>
 <label for="title">Total Invoice:</label>
 <input type="totalinvoice" name="totalinvoice" id="totalinvoice">
+<?php echo $message; ?>
 <input type="submit" name="submit" value="Submit" />
 </form>
 </html>

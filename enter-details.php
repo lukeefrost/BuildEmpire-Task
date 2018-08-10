@@ -12,6 +12,7 @@ if(!isset($_POST["submit"]))
 {
 	header("Location:create-profile-form.php");
 }
+
 //get the form data
 $name=$_POST['name'];
 $password=$_POST['password'];
@@ -21,14 +22,24 @@ $num1 = $_POST['hours'];
 $num2 = $_POST['multiply'];
 $num3 = $_POST['quantity'];
 $num4 = $_POST['multiply1'];
+$totalinvoice = $_POST['totalinvoice'];
 $first = $num1 * $num2;
 $second = $num3 * $num4;
+echo "Name: ". $name;
+echo "<br>";
+echo "Password: ". $password;
+echo "<br>";
+echo "Email Address: ". $eaddress;
+echo "<br>";
+echo "Phone Number: ". $phone;
+echo "<br>";
 echo "Total for Service is ". $first;
 echo "<br>";
 echo "Total for Goods is ". $second;
 echo "<br>";
 $total = $first + $second;
-echo "Total invoice is ". $total;
+echo "Total Invoice is ". $total;
+
 
 
 //$validate the form data
@@ -60,6 +71,12 @@ if(!complete($phone))
 	$errorMsgs[]="<p>You need to enter a phone number</p>";
 }
 
+if(!complete($totalinvoice))
+{
+	$validForm=false;
+	$errorMsgs[]="<p>You need to enter a quote total</p>";
+}
+
 if(!$validForm)
 {
 	include("views/enter-details-error-view.php");
@@ -68,7 +85,7 @@ if(!$validForm)
 
 //Now try and insert the data
 $conn=getConn();
-$success=insertCustomer($conn,$name,$password,$eaddress,$phone,$total);
+$success=insertCustomer($conn,$name,$password,$eaddress,$phone,$totalinvoice);
 $conn=NULL; //close the connection
 
 if($success)
