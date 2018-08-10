@@ -2,6 +2,7 @@
 <head>
 </head>
 <body>
+<h1>Quote Details</h1>
 <?php
 include ("helpers/db_fncs.php");
 include ("models/customer-model.php");
@@ -10,7 +11,7 @@ include ("helpers/validation_fncs.php");
 //check if they've submitted the form
 if(!isset($_POST["submit"]))
 {
-	header("Location:create-profile-form.php");
+	header("Location:enter-details-form.php");
 }
 
 //get the form data
@@ -22,9 +23,10 @@ $num1 = $_POST['hours'];
 $num2 = $_POST['multiply'];
 $num3 = $_POST['quantity'];
 $num4 = $_POST['multiply1'];
-$totalinvoice = $_POST['totalinvoice'];
 $first = $num1 * $num2;
 $second = $num3 * $num4;
+
+
 echo "Name: ". $name;
 echo "<br>";
 echo "Password: ". $password;
@@ -71,11 +73,6 @@ if(!complete($phone))
 	$errorMsgs[]="<p>You need to enter a phone number</p>";
 }
 
-if(!complete($totalinvoice))
-{
-	$validForm=false;
-	$errorMsgs[]="<p>You need to enter a quote total</p>";
-}
 
 if(!$validForm)
 {
@@ -85,7 +82,7 @@ if(!$validForm)
 
 //Now try and insert the data
 $conn=getConn();
-$success=insertCustomer($conn,$name,$password,$eaddress,$phone,$totalinvoice);
+$success=insertCustomer($conn,$name,$password,$eaddress,$phone,$total);
 $conn=NULL; //close the connection
 
 if($success)
