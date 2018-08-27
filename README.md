@@ -6,6 +6,7 @@ Create a 3-step quotation process that has the following steps:
 
 1. Let the user enter their details as listed below, and once completed they should advance on to the
 next step.
+
 o Name
 
 o Password
@@ -20,16 +21,19 @@ different factors. They are outlined below, and an example of each provided, fee
 just these three products:
 
 Subscription:
+
 For example, a subscription to a teach course. The user can select what period of time they want to do this for
 - Selecting start & end date. The price should be set per day, and the user charged for every day attended (not
 including weekends).
 
-Service
+Service:
+
 For example, extra teaching sessions, however this is charged per hour and the user selects which recurring
 day of the week they want it, between what times, and how many weeks for. The service cannot be booked
 for a Sunday, and only between 9am & 7pm.
 
-Goods
+Goods:
+
 For example, a textbook, these are simply sold in quantity, and the user selects how many of each item they
 want to be able to select.
 
