@@ -3,12 +3,17 @@
 Task Details:
 
 Create a 3-step quotation process that has the following steps:
+
 1. Let the user enter their details as listed below, and once completed they should advance on to the
 next step.
 o Name
+
 o Password
+
 o Email Address
+
 o Phone Number
+
 
 2. Products to quote for, there are three different types of product, all that have pricing based on
 different factors. They are outlined below, and an example of each provided, feel free to set up with
@@ -29,10 +34,15 @@ For example, a textbook, these are simply sold in quantity, and the user selects
 want to be able to select.
 
 1. Total quotation for the everything selected, this should include:
+
 o User’s details
+
 o Breakdown of costs by product
+
 o Unique quote id for that quote
+
 o Total cost for the whole quote
+
 
 The quote should be saved in the database along with relevant information that could later be used to
 retrieve the quote.
