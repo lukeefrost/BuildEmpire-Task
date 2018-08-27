@@ -16,7 +16,7 @@ just these three products:
 
 Subscription:
 For example, a subscription to a teach course. The user can select what period of time they want to do this for
-- selecting start & end date. The price should be set per day, and the user charged for every day attended (not
+- Selecting start & end date. The price should be set per day, and the user charged for every day attended (not
 including weekends).
 
 Service
